@@ -1,28 +1,136 @@
-.bodyContainer{
-    background-image :url('../../public/isomph.jpg');
-    align-items:center;
-    height: 100vh;
-    background-repeat:  no-repeat;
-    background-attachment:scroll;
-    background-size:cover;
-    background-position-X:center;
-    background-position-Y:center;
-    background-origin:padding-box;
+.bodyContainer {
+  background-image: url("../../public/isomph.jpg");
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-origin: padding-box;
+  font-family: sans-serif;
+  font-variant: tabular-nums;
+}
+
+.bodyContainer:before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .formContainer {
-    width: 400px;
-    padding: 70px 50px;
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  width: 400px;
+  padding: 50px 40px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.formheader{
-    color:  rgb(120, 129, 149);
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1;
-    text-transform: uppercase;
+.formheader {
+  color: rgb(120, 129, 149);
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.button {
+  height: 28px;
+  width: 70px;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: 500;
+  background-color: rgb(68, 130, 255);
+  border-color: rgb(68, 130, 255);
+}
+
+.rememberSelect {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.radioButtonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.socialLoginContainer {
+  border-top: 1px dashed rgb(216, 216, 216);
+  width: 100%;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+.socialButton {
+  height: 28px;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.formField {
+  height: 33px;
+  font-size: 11px;
+  width: 100% !important;
+}
+
+.faceBookButton {
+  background-color: #3b5998;
+  color: white;
+}
+.googlePlusButton {
+  background-color: rgb(221, 75, 57);
+}
+.fireBaseButton {
+  background-color: rgb(242, 189, 27);
+}
+
+.promptController {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1;
+  color: rgb(193, 193, 193);
+  padding-right: inherit;
+  margin: 2px 0px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+.promptController::before {
+  display: flex;
+  margin-top: auto;
+  margin-right: 5px;
+  content: "*";
+  color: red;
+  font-weight: bold;
+}
+
+.forgotPasswordContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.forgotPasswordText {
+  font-size: 11px;
+  font-family: roboto;
+  color: rgb(121, 121, 121);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.createAccountLink {
+  font-size: 11px;
+  font-family: roboto;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
